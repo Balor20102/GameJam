@@ -7,6 +7,8 @@ public class playermovement : MonoBehaviour
     public float speed;
     private float Move;
 
+    public Animator animator; 
+
     public float jump;
 
     public bool isJumping;
@@ -24,7 +26,11 @@ public class playermovement : MonoBehaviour
     void Update()
     {
         
-        Move = Input.GetAxis("Horizontal");
+        Move = Input.GetAxisRaw("Horizontal");
+        animator.SetFloat("speed", Mathf.Abs(speed * Move));
+
+        bool flipped = speed < 0;
+        this.transform.rotation = Quaternion.Euler(new Vector3(0f, flipped ? 180f : 0f, 0f));
 
         rb.velocity = new Vector2 (speed * Move, rb.velocity.y);
 
@@ -36,6 +42,7 @@ public class playermovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+        animator.SetBool("jumping", false);
         if(other.gameObject.CompareTag("Ground")){
             isJumping = false; 
         }
@@ -43,7 +50,8 @@ public class playermovement : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D other)
     {
-        if(other.gameObject.CompareTag("Ground")){
+        animator.SetBool("jumping", true);
+        if (other.gameObject.CompareTag("Ground")){
                     isJumping = true; 
          }
     }
