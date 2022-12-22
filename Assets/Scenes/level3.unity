@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 240589103}
   m_Layer: 0
   m_Name: player-idle-1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1570,6 +1570,7 @@ GameObject:
   - component: {fileID: 1700816286}
   - component: {fileID: 1700816285}
   - component: {fileID: 1700816284}
+  - component: {fileID: 1700816287}
   m_Layer: 0
   m_Name: End (Idle)
   m_TagString: Untagged
@@ -1670,6 +1671,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1700816287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700816283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29bc9848fa0d484c89894741c76c470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1787954557
 GameObject:
   m_ObjectHideFlags: 0

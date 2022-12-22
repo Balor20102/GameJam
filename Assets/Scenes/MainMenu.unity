@@ -563,7 +563,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1462385481}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40b652edf6d4a8c4ab5014c4fcf59bd9, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d5e73ba0fc5590489db3e1337d82819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1462385484
@@ -611,8 +611,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1462385483}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: StartMyGame
+        m_TargetAssemblyTypeName: Mainmenu, Assembly-CSharp
+        m_MethodName: mainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -850,10 +850,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1823011642}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27eee9a35e7170a40a4c159fd831e00d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7568f55976ccbb548898a976568b6435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 0
+  lives: 3
   retry: 0
 --- !u!4 &1823011644
 Transform:

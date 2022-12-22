@@ -18,6 +18,6 @@ public class Mainmenu : MonoBehaviour
     }
     public void mainMenu()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("demoscene");
     }
 }
