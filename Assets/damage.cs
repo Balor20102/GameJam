@@ -1,15 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
- using System. Collections;
-  using System. Collections.Generic;
-  using UnityEngine;
 
-public class Skullscript : MonoBehaviour
+public class damage : MonoBehaviour
 {
-
-    void OnTriggerEnter2D(Collider2D col)
+    
+    
+     void OnCollisionEnter2D(Collision2D col)
     {
-        GameControlScript.health -= 1;
+        Debug.Log(col.gameObject.name);
+        Debug.Log("collision");
+        //  GameControlScript.health -= 1;
 
+        //print("test lmao");
     }
 }
-    
